@@ -169,7 +169,7 @@ def get_pid(kernel_type):
 def is_cell_separator(line):
     """ Determine whether a given line is a cell separator """
     # TODO allow users to define their own cell separators
-    cell_sep = ('##', '#%%', '# %%', '# <codecell>')
+    cell_sep = ('##', '#%%', '# %%', '# <codecell>', '```')
     return line.startswith(cell_sep)
 
 # from <http://serverfault.com/questions/71285/\
